@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Auto Match Again",
+  "version": "1.0",
+  "description": "Automatically clicks the 'Match Again' button when no match is found.",
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle",
+      "all_frames": true
+    }
+  ]
+}
